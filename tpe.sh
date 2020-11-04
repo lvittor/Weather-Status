@@ -55,6 +55,6 @@ LONGITUDE=$3
 
 OPENWEATHER_API="972f4eca99718ca311ec778723f21974"
 
-curl "https://api.openweathermap.org/data/2.5/find?lat=${LATITUDE}&lon=${LONGITUDE}&cnt=${CNT}&appid=${OPENWEATHER_API}" -o data.xml
+curl "https://api.openweathermap.org/data/2.5/find?lat=${LATITUDE}&lon=${LONGITUDE}&cnt=${CNT}&mode=xml&appid=${OPENWEATHER_API}" -o data.xml
 
 # data.xml + countries.xml---XQUERY---> weather_data.xml
