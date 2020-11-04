@@ -5,7 +5,7 @@ USAGE="
 USAGE\n
     \t ${0} max_count_cities latitude longitude\n\n
 DESCRIPTION\n
-    \t  \n\n
+    \t  GET request for OpenWeatherAPI \n\n
 ARGS\n 
     \t max_count_cities  \t  Maximum quantity of cities. Integer between 1 and 50 inclusive.\n
     \t latitude          \t\t  Latitude coordinate. Float between -90 and 90.\n
