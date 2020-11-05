@@ -4,10 +4,15 @@
         <html>
             <link rel="stylesheet" href="style.css"/>
             <head>
-                <h1> Weather status on <xsl:value-of select="count(/results//city)"/> Cities around the World </h1>
+                <h1>
+                    <xsl:choose>
+                        <xsl:when test="count(/results//city)"> Weather status on <xsl:value-of select="count(/results//city)"/> Cities around the World </xsl:when>
+                        <xsl:otherwise> <xsl:value-of select="results/error/text()"/> </xsl:otherwise>
+                    </xsl:choose>
+                </h1>
+
             </head>
             <body>
-                <h1> </h1>
                 <xsl:for-each select="results/country">
                     <h2> Weather on <xsl:value-of select="count(./cities)"/> cities of <xsl:value-of select="name"/> </h2>
                     <div class="wrapper">
@@ -52,7 +57,6 @@
                                     <div class="cell" data-title="Weather">
                                         <xsl:value-of select="weather"/>
                                     </div>
-
                                 </div>
                             </xsl:for-each>
                         </div>
@@ -61,7 +65,6 @@
             </body>
         </html>
     </xsl:template>
-
 </xsl:transform>
 
 <!-- <div id="wrapper" class="cell" data-title="Weather">
