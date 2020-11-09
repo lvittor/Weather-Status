@@ -55,7 +55,15 @@
                                         <xsl:value-of select="clouds"/>
                                     </div>
                                     <div class="cell" data-title="Weather">
-                                        <xsl:value-of select="weather"/>
+                                        <div class="img-txt">
+											<div class="content">
+												<xsl:value-of select="weather"/>
+											</div>
+											<div class="photo">
+												<xsl:variable name="icon" select="weather/@icon"/>
+            									<img src="http://openweathermap.org/img/wn/{$icon}@2x.png"/>
+											</div>
+										</div>
                                     </div>
                                 </div>
                             </xsl:for-each>
@@ -66,14 +74,3 @@
         </html>
     </xsl:template>
 </xsl:transform>
-
-<!-- <div id="wrapper" class="cell" data-title="Weather">
-        <div id="weather_value">
-            <xsl:value-of select="weather"/>
-        </div>
-        <xsl:text>&#160;</xsl:text> 
-        <div id="weather_icon">
-            <xsl:variable name="icon" select="weather/@icon"/>
-            <img class="resize" src="http://openweathermap.org/img/wn/{$icon}@2x.png"/>
-        </div>
-</div> --> 

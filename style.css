@@ -20,6 +20,28 @@ h1 {
     margin-bottom: 4%;
 }
 
+.img-text {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+.photo,
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.photo {
+  width: 40%;
+}
+.photo img {
+  max-width: 100%;
+  height: auto;
+}
+.content {
+  width: 60%;
+  padding: 0px;
+}
+
 /* #wrapper {
     display: inline-block;
     text-align: center;
@@ -121,8 +143,11 @@ h1 {
 }
 
 .cell {
-	padding: 6px 12px;
-	display: table-cell;
+	padding: 5px 12px;
+	text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+
 }
 
 @media screen and (max-width: 580px) {
