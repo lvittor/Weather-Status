@@ -1,4 +1,4 @@
-declare function local:getCountries() as node()
+declare function local:getCountries() as item()*
 {
     for $country in doc('countries.xml')//country 
     where doc('data.xml')//item/city/country = $country/@alpha-2
