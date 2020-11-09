@@ -14,7 +14,7 @@
             </head>
             <body>
                 <xsl:for-each select="results/country">
-                    <h2> Weather on <xsl:value-of select="count(./cities)"/> cities of <xsl:value-of select="name"/> </h2>
+                    <h2> Weather on <xsl:value-of select="count(.//city)"/> cities of <xsl:value-of select="name"/> </h2>
                     <div class="wrapper">
                         <div class="table">
                             <div class="row header">
