@@ -3,7 +3,7 @@
 CNT=$1
 LATITUDE=$2
 LONGITUDE=$3
-OPENWEATHER_API="972f4eca99718ca311ec778723f21974"
+# OPENWEATHER_API="972f4eca99718ca311ec778723f21974"
 
 rm -rf data.xml weather_data.xml weather_page.html
 
