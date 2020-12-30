@@ -1,6 +1,5 @@
 body {
 	text-align:center;
-	/* margin: auto; */
 	font-family: 'Helvetica Neue', Helvetica, Arial;
 	font-size: 14px;
 	line-height: 20px;
@@ -41,25 +40,6 @@ h1 {
   width: 60%;
   padding: 0px;
 }
-
-/* #wrapper {
-    display: inline-block;
-    text-align: center;
-    justify-content: space-around;
-    display: flex; 
-    flex-direction: row;
-
-    flex-wrap: wrap;
-    padding: 0 3%;
-}
-
-#weather_value {
-    flex:1;
-}
-
-#weather_icon {
-    flex:1;
-} */
 
 @media screen and (max-width: 580px) {
 	body {
