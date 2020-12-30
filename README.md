@@ -1,4 +1,4 @@
-# OpenWeatherMap XML ☁️
+# Weather Status ☁️
 
 This project aims to provide a webpage of current weather conditions among various cities, separated by country. In case of finding errors in the entered parameters, its processing is delegated to the OpenWeather API and maintaining the previous flow of the programs, the error obtained is shown as a header in the webpage.
 
